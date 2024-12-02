@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Private Anime World</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <style>
+            .header {
+            background-color: blue;
+            color: white;
+            width: 100%;
+            height: 68px;
+            font-size: 50px;
+            position: fixed;
+            top: 0;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+        }
+        .header img {
+            border-radius: 50%;
+            width: 40px;
+            height: 75%;
+            margin-right: 10px;
+        }
+        .tool {
+            background-color: blue;
+            color: white;
+            width: 100%;
+            height: 50px;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            list-style-type: none;
+            position: fixed;
+            top: 50px;
+        }
+        .tool__child {
+            color: white;
+            background-color: blue;
+            font-size: 18px;
+            margin-right: 40px;
+        }
+        .btn {
+            cursor: pointer;
+            background-color: blue;
+            text-decoration: none;
+            border: none;
+            color: white;
+        }
+        input {
+            width: 550px;
+            height: 30px;
+            margin-right: 50px;
+            font-size: 15px;
+        }
+        .background {
+            width: 100%;
+            height: 102vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .background img {
+            width: 100%;
+            height: 100%;
+        }
+        .overlay {
+            position: absolute;
+            background-color: white;
+            width: 378px;
+            height: 550px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-items: center;
+            flex-direction: column;
+            margin-top: 100px;
+        }
+        .overlay input {
+            width: 307px;
+            height: 35px;
+            margin-left: 35.5px;
+        }
+        .overlay__btn {
+            text-decoration: none;
+            width: 307px;
+            height: 100px;
+            color: white;
+            background-color: green;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://i.pinimg.com/736x/da/1f/7c/da1f7c06bde9d3b6dce7a2c2fd75e642.jpg" alt="icon">
+        <b>MyPrivateAnimeWeb</b>
+    </div>
+    <div class="tool">
+        <ul class="tool">
+            <li class="tool__child"><a href="./index.html"><button class="btn">Home</button></a></li>
+            <li class="tool__child"><buntton class="btn">Notifications</buntton></li>
+            <li class="tool__child"><button class="btn">Connect to others</button></li>
+            <li class="tool__child"><a href="./Christmas.html"><button class="btn">Events</button></a></li>
+            <input type="text" placeholder="Search...">
+            <li class="tool__child"><a href="./Signup.html"><button class="btn">Sign up</button></a></li>
+            <li class="tool__child"><a href="./Login.html"><button class="btn">Log in</button></a></li>
+        </ul>
+    </div>
+    <div class="background">
+        <img src="https://img.freepik.com/premium-photo/winter-background-anime-style_398492-12207.jpg" alt="background">
+        <div class="overlay">
+            <h1 style="font-size: 50px;"><b>Sign up</b></h1>
+            <p>Email or phonenumber:</p>
+            <input>
+            <p>Username:</p><br>
+            <input>
+            <p>Password:</p><br>
+            <input>
+            <button class="overlay__btn"><a href="./Login.html"><h2>Sign up</h2></a></button>
+            <p>Already had an account?</p>
+            <a href="./Login.html">Log in.</a>
+        </div>
+    </div>
+</body>
+</html>
